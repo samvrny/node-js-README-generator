@@ -14,15 +14,31 @@
 function generateMarkdown(data) {
   return `
   # ${data.title}
+
   ## Description
   ${data.description}
+
   ## Table of contents
   [Installation](#Installation)
   [Usage](#Usage)
+
   ## Installation
   ${data.installation}
+
   ## Usage
   ${data.usage}
+
+  ## Liscence
+  
+  ## Contributing
+  ${data.contributing}
+
+  ## Tests
+  ${data.tests}
+
+  ## Questions
+  Here is my github profile: [Github](https://github.com/${data.github})
+  Reach me via email with any additional questions: [${data.email}](${data.email})
 
 `;
 }
