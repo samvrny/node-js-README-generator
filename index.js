@@ -33,11 +33,11 @@ function promptQuestions() {
             name: "usage",
             message: "What is this project intended to be used for?"
         },
-        // {
-        //     type: "input",
-        //     name: "license",
-        //     message: "What is the license for your project?"
-        // },
+        {
+            type: "input",
+            name: "license",
+            message: "What is the license for your project?"
+        },
         {
             type: "input",
             name: "contributing",
@@ -64,10 +64,10 @@ function promptQuestions() {
 // Function call to initialize app
 promptQuestions()
     .then(data => {
-        console.log(data);
+        //console.log(data);
         const pageREADME = generateREADME(data);
-        fs.writeFile("./README.md", pageREADME, err => {
+        fs.writeFile("./dist/README.md", pageREADME, err => {
             if(err) throw err;
-            console.log(err, "CHICKEN");
+            //console.log(err, "CHICKEN");
         });
     });
