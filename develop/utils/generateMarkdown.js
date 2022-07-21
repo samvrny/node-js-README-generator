@@ -19,8 +19,8 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of contents
-  [Installation](#Installation)
-  [Usage](#Usage)
+  [Installation](#Installation)\
+  [Usage](#Usage)\
 
   ## Installation
   ${data.installation}
@@ -37,8 +37,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  Here is my github profile: [Github](https://github.com/${data.github})
-  Reach me via email with any additional questions: [${data.email}](${data.email})
+  Here is my github profile: [Github](https://github.com/${data.github})\
+  Reach me via email with any additional questions: [${data.email}](${data.email})\
 
 `;
 }
