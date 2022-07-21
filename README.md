@@ -1,24 +1,33 @@
 
-  # nodeJS README generator
+  # Sample
 
   ## Description
-  This project generates a README from the command line
+  sample
 
   ## Table of contents
-  [Installation](#Installation)  [Usage](#Usage)  [Liscence](#Liscence)  [Contributing](#Contributing)  [Tests](#Tests)  [Questions](#Questions)  
+  [Installation](#Installation)<br/>
+  [Usage](#Usage)<br/>
+  [Liscence](#Liscence)<br/>
+  [Contributing](#Contributing)</br>
+  [Tests](#Tests)</br>
+  [Questions](#Questions)</br>
+  </br>
+
   ## Installation
-  Please refer to the package.json for the required dependancies. This project uses npm inquirer 8.2.4
+  sample
 
   ## Usage
-  This project was made to demonstrate how to create a file from the command line
+  sample
 
   ## Liscence
   
   ## Contributing
-  Samuel Varney
+  sample
 
   ## Tests
-  This is a sample test
+  sample
 
   ## Questions
-  Here is my github profile: [Github](https://github.com/samvrny)  Reach me via email with any additional questions: [samvrny@gmail.com](samvrny@gmail.com)
+  Here is my github profile: [Github](https://github.com/sample)<br/>
+  Reach me via email with any additional questions: [sample](sample)
+

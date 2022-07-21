@@ -19,13 +19,13 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of contents
-  [Installation](#Installation)\
-  [Usage](#Usage)\
-  [Liscence](#Liscence)\
-  [Contributing](#Contributing)\
-  [Tests](#Tests)\
-  [Questions](#Questions)\
-  \
+  [Installation](#Installation)<br/>
+  [Usage](#Usage)<br/>
+  [Liscence](#Liscence)<br/>
+  [Contributing](#Contributing)</br>
+  [Tests](#Tests)</br>
+  [Questions](#Questions)</br>
+  </br>
 
   ## Installation
   ${data.installation}
@@ -42,8 +42,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  Here is my github profile: [Github](https://github.com/${data.github})\
-  Reach me via email with any additional questions: [${data.email}](${data.email})\
+  Here is my github profile: [Github](https://github.com/${data.github})<br/>
+  Reach me via email with any additional questions: [${data.email}](${data.email})
 
 `;
 }
