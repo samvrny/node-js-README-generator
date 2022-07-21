@@ -11,7 +11,7 @@ const generateREADME = require("./utils/generateMarkdown.js");
 //function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {
+function promptQuestions() {
     return inquirer.prompt([
         {
             type: "input",
@@ -46,7 +46,7 @@ function init() {
         {
             type: "input",
             name: "tests",
-            message: "SAMPLE TEST QUESTION"
+            message: "SAMPLE TEST QUESTION (ask tutor what to put in here)"
         },
         {
             type: "input",
@@ -62,7 +62,7 @@ function init() {
 };
 
 // Function call to initialize app
-init()
+promptQuestions()
     .then(data => {
         console.log(data);
         const pageREADME = generateREADME(data);
