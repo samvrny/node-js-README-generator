@@ -35,8 +35,8 @@ function promptQuestions() {
         },
         // {
         //     type: "input",
-        //     name: "liscence",
-        //     message: "What is the liscence for your project?"
+        //     name: "license",
+        //     message: "What is the license for your project?"
         // },
         {
             type: "input",
