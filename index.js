@@ -66,7 +66,7 @@ promptQuestions()
     .then(data => {
         //console.log(data);
         const pageREADME = generateREADME(data);
-        fs.writeFile("./dist/README.md", pageREADME, err => {
+        fs.writeFile("./GENERATED_README.md", pageREADME, err => {
             if(err) throw err;
             //console.log(err, "CHICKEN");
         });

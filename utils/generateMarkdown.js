@@ -2,14 +2,14 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
   console.log("BANANA")
-  renderLicenseLink(data);
+  
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
   console.log("PEACH")
-  renderLicenseSection(data)
+  
 }
 
 // TODO: Create a function that returns the license section of README
@@ -26,6 +26,8 @@ function renderLicenseSection(data) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   renderLicenseBadge(data)
+  renderLicenseLink(data)
+  renderLicenseSection(data)
   return `
   # ${data.title}
 
@@ -48,8 +50,9 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Licence
-  ${renderLicenseSection(data)} //PROBABLY going to need to add badge/link template literals
-
+  ${renderLicenseSection(data)}
+  ${renderLicenseBadge(data)}
+  ${renderLicenseLink(data)}
   ## Contributing
   ${data.contributing}
 

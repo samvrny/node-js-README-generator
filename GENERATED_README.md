@@ -1,8 +1,8 @@
 
-  # 1
+  # Sample
 
   ## Description
-  2
+  Sample
 
   ## Table of contents
   * [Installation](#Installation)</br>
@@ -14,21 +14,22 @@
   </br>
 
   ## Installation
-  1
+  Sample
 
   ## Usage
-  2
+  Sample
 
   ## Licence
   BAGEL
-
+  undefined
+  undefined
   ## Contributing
-  1
+  Sample
 
   ## Tests
-  2
+  Sample
 
   ## Questions
-  Here is my github profile: [Github](https://github.com/1)</br>
-  Reach me via email with any additional questions: [2](2)
+  Here is my github profile: [Github](https://github.com/Sample)</br>
+  Reach me via email with any additional questions: [Sample](Sample)
 
