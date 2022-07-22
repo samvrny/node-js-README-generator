@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateREADME = require("./utils/generateMarkdown.js");
 
+//this function is full of the questions that will be asked of the user
 function promptQuestions() {
     return inquirer.prompt([
         {
@@ -17,12 +18,12 @@ function promptQuestions() {
         {
             type: "input",
             name: "installation",
-            message: "What are your installation instructions?"
+            message: "Please enter installation instructions"
         },
         {
             type: "input",
             name: "usage",
-            message: "How would you use this application?"
+            message: "How do you use this application?"
         },
         {
             type: "list",
@@ -40,7 +41,7 @@ function promptQuestions() {
             type: "input",
             name: "tests",
             message: "How do you run the tests for this application?" 
-        }, // no tests (if none) or "jest" 
+        },  
         {
             type: "input",
             name: "github",

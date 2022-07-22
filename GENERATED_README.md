@@ -1,8 +1,8 @@
 
-  # sad
+  # nodejs README generator
 
   ## Description
-  sad
+  This project dynamically creates a README file from command line prompts
 
   ## Table of contents
   * [Installation](#installation)</br>
@@ -14,25 +14,25 @@
   </br>
 
   ## Installation
-  sad
+  Install dependancies with npm install from the command line
 
   ## Usage
-  sad
+  Run node index from the command line
 
   ## License
-  ![](https://img.shields.io/badge/license-Mozilla-green) </br>
-  [Mozilla](https://choosealicense.com/licenses/mpl-2.0/) </br>
+  ![](https://img.shields.io/badge/license-Apache-green) </br>
+  [Apache](https://choosealicense.com/licenses/apache-2.0/) </br>
   
-    Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.
+    A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
     
 
   ## Contributing
-  sad
+  Samuel Varney
 
   ## Tests
-  sad
+  No tests
 
   ## Questions
-  Here is my github profile: [Github](https://github.com/sad)</br>
-  Reach me via email with any additional questions: [sad](mailto:sad)
+  Here is my github profile: [Github](https://github.com/samvrny)</br>
+  Reach me via email with any additional questions: [samvrny@gmail.com](mailto:samvrny@gmail.com)
 

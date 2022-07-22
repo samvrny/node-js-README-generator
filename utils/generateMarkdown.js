@@ -24,14 +24,13 @@ function renderLicenseLink(data) {
 
 //this section generates a brief description of the license
 function renderLicenseSection(data) {
-  console.log("SUSHI")
   if(!data.license) {
     return ""
   } else if(data.license === "MIT") {
     return `
     A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
     `
-  } else if(data.license === " Apache") {
+  } else if(data.license === "Apache") {
     return `
     A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
     `
@@ -89,8 +88,5 @@ function generateMarkdown(data) {
 
 module.exports = generateMarkdown
 
-//if time, ask about video presentation context. What goes in it? Do I talk? NO TALKING
-//In the rubric, for submission, it is required that we submit a sample README it says? YES submit README sample
-//TESTS: if not tests, write no tests. if jest, "jest"
 
 

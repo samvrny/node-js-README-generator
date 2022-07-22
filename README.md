@@ -9,7 +9,7 @@
 
   Here is a video of how the application works!
 
-  [](VIDEO HERE)
+  [](https://drive.google.com/file/d/11D-wZyIaz_DhcBPmU9Rt-IVpkmrKxqcR/view)
 
   ## Usage
   You can invoke this application by running "node index" in your command line
