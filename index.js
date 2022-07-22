@@ -1,16 +1,7 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateREADME = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
-//const questions = []; COULD BE that each question is written, and then the NAME part of the input questions
-//is just a numbered index (i.e. name: 1, 2, 3, etc.)
-
-// TODO: Create a function to write README file. What?? 
-//function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
 function promptQuestions() {
     return inquirer.prompt([
         {
@@ -31,12 +22,14 @@ function promptQuestions() {
         {
             type: "input",
             name: "usage",
-            message: "What is this project intended to be used for?"
+            message: "How would you use this application?"
         },
         {
-            type: "input",
+            type: "list",
             name: "license",
-            message: "What is the license for your project?"
+            message: "What is the license for your project?",
+            choices: ["Apache", "Mozilla", "MIT", "GNU"],
+            default: "MIT"
         },
         {
             type: "input",
@@ -46,8 +39,8 @@ function promptQuestions() {
         {
             type: "input",
             name: "tests",
-            message: "SAMPLE TEST QUESTION (ask tutor what to put in here)"
-        },
+            message: "How do you run the tests for this application?" 
+        }, // no tests (if none) or "jest" 
         {
             type: "input",
             name: "github",
@@ -64,10 +57,8 @@ function promptQuestions() {
 // Function call to initialize app
 promptQuestions()
     .then(data => {
-        //console.log(data);
         const pageREADME = generateREADME(data);
         fs.writeFile("./GENERATED_README.md", pageREADME, err => {
             if(err) throw err;
-            //console.log(err, "CHICKEN");
         });
     });

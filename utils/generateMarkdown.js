@@ -1,39 +1,52 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//this function generates the license badge
 function renderLicenseBadge(data) {
-  console.log("BANANA")
   if(!data.license) {
     return ""
   } else {
-    return `SOMETHING ELSE`
+    return `![](https://img.shields.io/badge/license-${data.license}-green)`
   }
-  
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//this function generates the link to the license
 function renderLicenseLink(data) {
-  console.log("PEACH")
   if(!data.license) {
     return ""
-  } else {
-    return `SOMETHING`
-  }
-  
+  } else if(data.license === "MIT") {
+    return `[${data.license}](https://choosealicense.com/licenses/mit/)`
+  } else if(data.license === "Apache") {
+    return `[${data.license}](https://choosealicense.com/licenses/apache-2.0/)`
+  } else if(data.license === "Mozilla") {
+    return `[${data.license}](https://choosealicense.com/licenses/mpl-2.0/)`
+  } else if(data.license === "GNU") {
+    return `[${data.license}](https://choosealicense.com/licenses/agpl-3.0/)`
+  }  
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//this section generates a brief description of the license
 function renderLicenseSection(data) {
-  console.log("SUSHI") //ASK WHY this is running twice, just to make sure it's not totally incorrect
+  console.log("SUSHI")
   if(!data.license) {
     return ""
+  } else if(data.license === "MIT") {
+    return `
+    A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+    `
+  } else if(data.license === " Apache") {
+    return `
+    A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+    `
+  } else if(data.license === "Mozilla") {
+    return `
+    Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.
+    `
+  } else if(data.license === "GNU") {
+    return `
+    Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
+    `
   }
-
-  return `${data.license}`
 }
 
-// TODO: Create a function to generate markdown for README
+//this function generates the readme dynamically
 function generateMarkdown(data) {
   return `
   # ${data.title}
@@ -42,12 +55,12 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of contents
-  * [Installation](#Installation)</br>
-  * [Usage](#Usage)</br>
-  * [License](#License)</br>
-  * [Contributing](#Contributing)</br>
-  * [Tests](#Tests)</br>
-  * [Questions](#Questions)</br>
+  * [Installation](#installation)</br>
+  * [Usage](#usage)</br>
+  * [License](#license)</br>
+  * [Contributing](#contributing)</br>
+  * [Tests](#tests)</br>
+  * [Questions](#questions)</br>
   </br>
 
   ## Installation
@@ -56,10 +69,10 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Licence
+  ## License
+  ${renderLicenseBadge(data)} </br>
+  ${renderLicenseLink(data)} </br>
   ${renderLicenseSection(data)}
-  ${renderLicenseBadge(data)}
-  ${renderLicenseLink(data)}
 
   ## Contributing
   ${data.contributing}
@@ -76,12 +89,8 @@ function generateMarkdown(data) {
 
 module.exports = generateMarkdown
 
-//NOTES FOR TUTOR:
-//1) Fix email link in the README
-//2) Ask if generated README should be in a different folder (ie dist)
-//3) Get the liscence printing something in its spot
-//3.2 Ask about what to put in tests section
-//4) If time, ask about video presentation context. What goes in it? Do I talk? Etc.
-//5) Ask about TODO sections and if I really need to go off of those or if I can do it the way I already did.
+//if time, ask about video presentation context. What goes in it? Do I talk? NO TALKING
+//In the rubric, for submission, it is required that we submit a sample README it says? YES submit README sample
+//TESTS: if not tests, write no tests. if jest, "jest"
 
 
