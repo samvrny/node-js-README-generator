@@ -2,6 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
   console.log("BANANA")
+  if(!data.license) {
+    return ""
+  } else {
+    return `SOMETHING ELSE`
+  }
   
 }
 
@@ -9,6 +14,11 @@ function renderLicenseBadge(data) {
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
   console.log("PEACH")
+  if(!data.license) {
+    return ""
+  } else {
+    return `SOMETHING`
+  }
   
 }
 
@@ -25,9 +35,6 @@ function renderLicenseSection(data) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  renderLicenseBadge(data)
-  renderLicenseLink(data)
-  renderLicenseSection(data)
   return `
   # ${data.title}
 
@@ -53,6 +60,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data)}
   ${renderLicenseBadge(data)}
   ${renderLicenseLink(data)}
+
   ## Contributing
   ${data.contributing}
 
@@ -61,7 +69,7 @@ function generateMarkdown(data) {
 
   ## Questions
   Here is my github profile: [Github](https://github.com/${data.github})</br>
-  Reach me via email with any additional questions: [${data.email}](${data.email})
+  Reach me via email with any additional questions: [${data.email}](mailto:${data.email})
 
 `;
 }

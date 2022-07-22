@@ -20,9 +20,10 @@
   Sample
 
   ## Licence
-  BAGEL
-  undefined
-  undefined
+  MIT
+  SOMETHING ELSE
+  SOMETHING
+
   ## Contributing
   Sample
 
@@ -30,6 +31,6 @@
   Sample
 
   ## Questions
-  Here is my github profile: [Github](https://github.com/Sample)</br>
-  Reach me via email with any additional questions: [Sample](Sample)
+  Here is my github profile: [Github](https://github.com/samvrny)</br>
+  Reach me via email with any additional questions: [samvrny@gmail.com](mailto:samvrny@gmail.com)
 
