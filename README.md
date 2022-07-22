@@ -7,7 +7,7 @@
   ## Installation
   This application uses node.js and requires npm inquirer 8.2.4. Install the dependancies with "npm install" in the command line
 
-  Here is a video of how the application works!
+  Here is a link to a video of how the application works!
 
   https://drive.google.com/file/d/11D-wZyIaz_DhcBPmU9Rt-IVpkmrKxqcR/view
 
